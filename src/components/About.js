@@ -17,9 +17,18 @@ const About = () => {
       <div>
         <h2>O mnie...</h2>
         <h3>Jestem absolwentem Edukacji artystycznej w zakresie sztuki muzycznej.</h3>
-        <p>Posiadam wieloletnie doświadczenie sceniczne oraz pedagogiczne. </p>
-        <p>Gitarową pasją z uczniami dzielę się od ponad 15 lat. </p>
         <p>Na co dzień jestem instruktorem muzykoterapii i realizuję się gitarowo w kilku projektach muzycznych (m.in. Czarek Kuczyński i Brylanty i Bażanty)</p>
+      <div className='flex'>
+        <div>
+          <div className='text-[40px] font-tertiary text-gradient
+          mb-2'>
+            <CountUp start={0} end={15} duration={5}/> 
+          </div>
+          <div className='font-primary text-sm tracking-[2px]'>
+          Lat doświadczenia<br/>w Edukacji.
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </div>
