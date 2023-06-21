@@ -49,7 +49,7 @@ const Banner = () => {
       spy={true} 
     >
           <button className='btn btn-lg'>Kontakt</button></Link>
-          <Link to='contact' activeClass='active'
+          <Link to='about' activeClass='active'
       smooth={true}
       spy={true} 
     ><a href='#' className='text-gradient btn-link'>O mnie</a>
