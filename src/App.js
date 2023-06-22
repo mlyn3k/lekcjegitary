@@ -19,6 +19,7 @@ const App = () => {
       <Work />
       <Contact />
       <div className='h-[4000px]'></div>
+      <h1><center>Copyright @ Łukasz Młynarczyk @ 2023</center></h1>
     </div>
   );
 };
