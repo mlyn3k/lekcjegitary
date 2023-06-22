@@ -14,7 +14,7 @@ const About = () => {
     <div>
       <div className='flex-1 bg-about bg-contain bg-no-repeat h-[500px]
       mix-blend-lighten bg-top'></div>
-      <div>
+      <div className='flex-1'>
         <h1>Nazywam się Łukasz Młynarczyk.</h1>
         <h3>Jestem absolwentem Edukacji Artystycznej w Zakresie Sztuki Muzycznej.</h3>
         <p>Na co dzień jestem instruktorem muzykoterapii i realizuję się gitarowo w kilku projektach muzycznych (m.in. Czarek Kuczyński i Brylanty i Bażanty).</p><br></br>
@@ -27,16 +27,6 @@ const About = () => {
           </div>
           <div className='font-primary text-sm tracking-[2px]'>
           Lat doświadczenia<br/>muzycznego
-          </div>
-        </div>
-        <div>
-          <div className='text-[40px] font-tertiary text-gradient
-          mb-2'>
-            { inView ?
-              <CountUp start={0} end={15} duration={5}/> : null} 
-          </div>
-          <div className='font-primary text-sm tracking-[2px]'>
-          Lat praktyki<br/>pedagogicznej
           </div>
         </div>
         <div>

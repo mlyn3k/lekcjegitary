@@ -39,7 +39,7 @@ const Banner = () => {
         <motion.p 
         variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} 
         className='mb-8 max-w-lg mx-auto lg:mx-0'>
-        Planujesz zacząć przygodę z gitarą lub chcesz doskonalić swój warsztat muzyczny? - Zapraszam
+        Dla dzieci, młodzieży i dorosłych
 
         </motion.p>
         <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} 
