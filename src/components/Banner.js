@@ -13,7 +13,7 @@ const Banner = () => {
     lg:gap-x-2'>
       <div className='flex-1 text-center font-secondary lg:text-left'>
         <motion.h1 variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} 
-        className='text-[55px] font-bold leading-[0.8] lg:text-[70px]'>LEKCJE GITARY <span>OLSZTYN</span></motion.h1>
+        className='text-[35px] font-bold leading-[0.8] lg:text-[60px]'>LEKCJE GITARY <span>OLSZTYN</span></motion.h1>
         <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} 
         className='mb-6 text-[20px] lg:text-[40px]
         font-secondary font-semibold uppercase leading-[1]'>
@@ -38,12 +38,12 @@ const Banner = () => {
         </motion.div>
         <motion.p 
         variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} 
-        className='mb-8 max-w-lg mx-auto lg:mx-0'>Indywidualne lekcje gry dla dzieci, młodzieży i dorosłych.<br></br>
-        Pomoc w doborze odpowiedniego instrumentu.<br></br>
-        Konsultacje muzyczno - sprzętowe.<br></br>
-        Aranżacje oraz nagrania.</motion.p>
+        className='mb-8 max-w-lg mx-auto lg:mx-0'>
+        Planujesz zacząć przygodę z gitarą lub chcesz doskonalić swój warsztat muzyczny? - Zapraszam
+
+        </motion.p>
         <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} 
-         className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
+         className='flex max-w-max gap-x-6 items-center mb-8 mx-auto lg:mx-0'>
           <Link to='contact' activeClass='active'
       smooth={true}
       spy={true} 
@@ -56,7 +56,7 @@ const Banner = () => {
         </Link>
         </motion.div>
         <motion.div variants={fadeIn('up', 0.7)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} 
-        className='flex text-[30px] gap-x-6 max-w-max mx-auto
+        className='flex text-[20px] gap-x-6 max-w-max mx-auto
         lg:mx-0'>
         <a href='https://www.facebook.com/lekcjegitaryolsztyn/'>
 <FaFacebook/>
