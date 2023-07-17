@@ -68,7 +68,7 @@ const Services = () => {
         <div>
         {services.map((service, index) => {
           const {name, description} = service;
-          return <div className='border-b border-white/20 h-[146px] mb-[20px] flex'  key={index}>
+          return <div className='border-b border-white/20 h-[146px] mb-[38px] flex'  key={index}>
             <div className='max-w-[476px]'>
               <h4 className='text-[20px] tracking-wider 
               font-bold mb-6'>{name}</h4>
