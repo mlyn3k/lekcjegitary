@@ -8,7 +8,7 @@ const services = [
   {
     name: 'Nauka gry dla dzieci, młodzieży i dorosłych',
     description:
-    'Lekcje skierowane są zarówno do stawiających pierwsze kroki w świecie muzyki, jak również dla osób zaawansowanych chcących doskonalić swoją technikę, improwizację czy teorię muzyki.',
+    'Lekcje skierowane są dla osób początkujących oraz zaawansowanych.',
 
   },
   {
@@ -20,13 +20,7 @@ const services = [
   {
     name: 'Pomoc w doborze odpowiedniego instrumentu',
     description:
-    'Oferuję pomoc w wyborze i zakupie odpowiedniego instrumentu.',
-
-  },
-  {
-    name: 'Konsultacje muzyczno - sprzętowe',
-    description:
-    'Jeśli potrzebujesz porozmawiać czy ograć dany sprzęt - zapraszam.',
+    'Pomagam w wyborze i zakupie odpowiedniego instrumentu.',
 
   },
   {
@@ -41,7 +35,13 @@ const Services = () => {
 <section className='section' id='services'>
   <div className='container mx-auto'>
     <div className='flex flex-col lg:flex-row'>
-      <div className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
+
+      <motion.div 
+      variants={fadeIn('right', 0.3)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.3}}
+      className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
         <h2 className='h2 text-accent mb-6'>Lekcje Gitary Olsztyn</h2>
         <h3 className='h4 max-w-[455px] mb-16'>
           Ponad 15 - letnie doświadczenie w edukacji to wypracowane metody w skutecznej nauce gry na instrumencie.<br></br><br></br>
@@ -58,22 +58,31 @@ const Services = () => {
 <FaYoutube/>
         </a>
         </motion.div>
-      </div>
-      <div className='flex-1'>
+      </motion.div>
+      <motion.div 
+      variants={fadeIn('left', 0.5)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{once: false, amount: 0.3}}
+      className='flex-1'>
         <div>
         {services.map((service, index) => {
           const {name, description} = service;
-          return <div className='border-b border-white/20 flex'  key={index}>
+          return <div className='border-b border-white/20 h-[146px] mb-[20px] flex'  key={index}>
             <div className='max-w-[476px]'>
               <h4 className='text-[20px] tracking-wider 
               font-bold mb-6'>{name}</h4>
-              <p className='font-secondary leading-tight mb-2'>{description}</p>
+              <p className='font-secondary leading-tight'>{description}</p>
             </div>
-            <div></div>
+            <div className='flex flex-col flex-1 items-end '>
+              <div className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
+                <BsArrowUpRight/>
+              </div>
+            </div>
           </div>
         })}
         </div>
-      </div>
+      </motion.div>
     </div>
   </div>
 </section>
